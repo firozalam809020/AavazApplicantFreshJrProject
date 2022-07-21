@@ -49,7 +49,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "Skill [firstname=" + firstname + ", lastname=" + lastname + ", age=" +  age + " skills=" + skills "]";
+        return "Skill [firstname=" + firstname + ", lastname=" + lastname + ", age=" +  age]";
     }
 
 }
