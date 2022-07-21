@@ -5,37 +5,51 @@ package biz.aavaz.aavazapplicantfreshjrproject.model;
 //!!! https://sites.google.com/site/gson/gson-user-guide#TOC-JSON-Field-Naming-Support (JSON Field Naming Support)
 
 public class User {
-    private int id;
-    private String name;
+    
+    private String firstname;
+    private String lastname;
+    private int age;
+    private String skills;
     
 
-    public int getId() {
-        return id;
+    public String getFirstName() {
+        return FirstName;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setFirstName(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getName() {
-        return name;
+    public String getLastName() {
+        return LastName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLastName(String lastname) {
+        this.lastname=lastname;
+    }
+   
+
+    public int getAge() {
+        return Age;
     }
 
-    public int getLevel() {
-        return level;
+    public void setAge(int age) {
+        this.age = age;
     }
+    
+    
+//     public String geSkills() {
+//         return skills;
+//     }
 
-    public void setLevel(int level) {
-        this.level = level;
-    }
+//     public void setSkills(String skills) {
+//         this.skills=skills;
+//     }
+    
 
     @Override
     public String toString() {
-        return "Skill [id=" + id + ", name=" + name + ", level=" + level + "]";
+        return "Skill [firstname=" + firstname + ", lastname=" + lastname + ", age=" +  age + " skills=" + skills "]";
     }
 
 }
